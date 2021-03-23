@@ -12,6 +12,7 @@ public class GameStateController : StateController
     [SerializeField] private CommandProcessor enemyProcessor;
     [SerializeField] private HealthBehaviour playerHealth;
     [SerializeField] private HealthBehaviour enemyHealth;
+    [SerializeField] private EnemyFactory enemyFactory;
 
     private IState levelSetupState;
     private IState playerTurnState;
@@ -28,7 +29,7 @@ public class GameStateController : StateController
 
     private void Awake()
     {
-        levelSetupState = new LevelSetupState(this, playerButtons);
+        levelSetupState = new LevelSetupState(this, playerButtons, enemyFactory);
         playerTurnState = new PlayerTurnState(this, playerActionSelector, buttonEndController, playerButtons);
         enemyTurnState = new EnemyTurnState(this, enemyActionSelector);
 

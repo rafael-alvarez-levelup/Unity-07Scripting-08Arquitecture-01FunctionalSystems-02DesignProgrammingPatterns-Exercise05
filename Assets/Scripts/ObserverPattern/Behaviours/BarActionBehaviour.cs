@@ -9,7 +9,6 @@ public class BarActionBehaviour : MonoBehaviour, IBarAction
     private void Awake()
     {
         mySlider = GetComponent<Slider>();
-
         myText = GetComponentInChildren<Text>();
     }
 

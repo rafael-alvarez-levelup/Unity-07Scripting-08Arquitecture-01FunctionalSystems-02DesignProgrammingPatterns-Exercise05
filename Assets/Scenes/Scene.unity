@@ -952,6 +952,7 @@ MonoBehaviour:
   enemyProcessor: {fileID: 1042885742}
   playerHealth: {fileID: 1002243573}
   enemyHealth: {fileID: 1042885749}
+  enemyFactory: {fileID: 1842466471}
 --- !u!1 &559803870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2566,6 +2567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1106072602}
   - component: {fileID: 1106072603}
+  - component: {fileID: 1106072604}
   m_Layer: 5
   m_Name: BarHealthEnemy
   m_TagString: Untagged
@@ -2646,6 +2648,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1106072604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106072601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd75ec0d30a6d04daf9d15070602a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCharacter: {fileID: 1042885740}
 --- !u!1 &1149657909
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,6 +3025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1551956477}
   - component: {fileID: 1551956478}
+  - component: {fileID: 1551956479}
   m_Layer: 5
   m_Name: BarHealthPlayer
   m_TagString: Untagged
@@ -3090,6 +3106,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1551956479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551956476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd75ec0d30a6d04daf9d15070602a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCharacter: {fileID: 1002243566}
 --- !u!1 &1572545601
 GameObject:
   m_ObjectHideFlags: 0
@@ -3804,6 +3833,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1842466468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842466469}
+  - component: {fileID: 1842466471}
+  m_Layer: 0
+  m_Name: EnemyFactory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1842466469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842466468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1842466471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842466468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d9890a1804a85c4db6ccaf429de104f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPosition: {fileID: 1149657910}
+  enemies:
+  - {fileID: 7160473557098372963, guid: f9be3753dcfb51c46a08d708066e5a60, type: 3}
+  - {fileID: 7983322938645760940, guid: 485e231de371191499162566d5cc51cf, type: 3}
+  - {fileID: 3140330585319616544, guid: 4de7ef172cdb9464cb569d7c3013fd0d, type: 3}
+  - {fileID: -2364893742773792619, guid: be351bde7afd1db4eb14641bfd07c3a7, type: 3}
+  - {fileID: 6957554779691288297, guid: 6f3b41729c1dee34182de95fbd3e6710, type: 3}
 --- !u!1 &1845716753
 GameObject:
   m_ObjectHideFlags: 0
