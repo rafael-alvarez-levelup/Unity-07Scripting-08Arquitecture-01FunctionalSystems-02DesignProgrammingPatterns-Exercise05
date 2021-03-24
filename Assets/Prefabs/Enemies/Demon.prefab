@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3064768018575829080}
   - component: {fileID: 3064768018575829087}
   - component: {fileID: 3064768018575829086}
+  - component: {fileID: 7983322938645760940}
   m_Layer: 0
   m_Name: Demon
   m_TagString: Untagged
@@ -47,6 +48,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -101,3 +103,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7983322938645760940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3064768018575829085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dfdf28804d81644295ac812d834dabd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2
