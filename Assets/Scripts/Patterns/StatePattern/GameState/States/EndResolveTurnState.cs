@@ -28,6 +28,8 @@
             // TODO
             // Wait for enemy death animation. Redundant code -> DRY
             TimeManager.Instance.WaitForSeconds(1.5f, () => SwitchToLevelSetupState());
+
+            SwitchToLevelSetupState();
         }
         else
         {
