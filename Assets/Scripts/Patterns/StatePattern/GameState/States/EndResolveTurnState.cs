@@ -25,16 +25,14 @@
 
         if (enemyHealth.CurrentHealth <= 0)
         {
-            // TODO
-            // Wait for enemy death animation. Redundant code -> DRY
+            // TODO: Wait for enemy death animation. Redundant code -> DRY
+            // Switch to LevelSetupState when is notified about enemy death event
             TimeManager.Instance.WaitForSeconds(1.5f, () => SwitchToLevelSetupState());
-
-            SwitchToLevelSetupState();
         }
         else
         {
             controller.SwitchState<PlayerTurnState>();
-        }        
+        }
     }
 
     public override void Exit()

@@ -29,7 +29,7 @@ public class ActionPointsController : MonoBehaviour, ISubject<ActionPointsArgs>
         // Sum the action points cost of every action.
         int totalActionPoints = actionControllers.Sum(actionController => actionController.CurrentActionActionPoints);
 
-        // TODO : Refine this
+        // TODO : Encapsulate in behaviour, listen to the same event
         if (totalActionPoints > 10 || totalActionPoints == 0)
         {
             buttonEnd.SetInteractable(false);

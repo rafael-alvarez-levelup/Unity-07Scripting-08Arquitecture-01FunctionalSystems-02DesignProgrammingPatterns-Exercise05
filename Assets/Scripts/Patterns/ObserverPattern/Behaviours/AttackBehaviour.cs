@@ -1,7 +1,5 @@
 using UnityEngine;
 
-// TODO: Serialize Animator and SetTrigger("Attack")
-
 public class AttackBehaviour : Subject<AttackArgs>, IAttack
 {
     [SerializeField] private int damage;

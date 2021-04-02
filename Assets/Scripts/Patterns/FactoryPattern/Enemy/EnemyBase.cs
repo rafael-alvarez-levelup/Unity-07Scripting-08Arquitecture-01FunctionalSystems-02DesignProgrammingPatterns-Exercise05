@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// TODO: Move animation controller to EnemyVisualController class
+
 public abstract class EnemyBase : MonoBehaviour, IObserver, IObserver<AttackArgs>
 {
     public int ID => id;

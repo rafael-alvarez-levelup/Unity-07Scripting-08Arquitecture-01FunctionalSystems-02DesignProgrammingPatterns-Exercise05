@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// TODO: Animation waiting is implemented in the turns, not in the player
+
 public class PlayerVisualController : MonoBehaviour, IObserver<AttackArgs>
 {
     [SerializeField] private GameObject player;

@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+// TODO: Organize folders based on entities. For example: Enemy -> EnemyControllers, EnemyBehaviours, EnemyStates...
+
 public class LevelSetupState : State
 {
     private readonly ISetInteractable[] playerButtons;
@@ -33,9 +35,11 @@ public class LevelSetupState : State
         LevelManager.Instance.IncrementLevel();
 
         // Instantiate new enemy
+        // TODO: Get enemy properties after instantiating it
         int[] ids = enemyFactory.GetIDs();
         enemyFactory.Create(ids[Random.Range(0, ids.Length)]);
 
+        // TODO: Here I'm assuming all the enemies have the same properties
         // Reset enemy health
         enemyHealthReset.ResetHealth();
 
